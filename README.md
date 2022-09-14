@@ -1,5 +1,7 @@
 # wrxSpace
-
+## How to run
+- Clone the repo locally
+- Download Live server plugin for VSCode: 
 
 
 ## Getting started
