@@ -1,7 +1,10 @@
 # wrxSpace
 ## How to run
-- Clone the repo locally
-- Download Live server plugin for VSCode: 
+1. Clone the repo locally
+2. Download [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) plugin for VSCode
+3. From the files editor on the left-hand side of VSCode, click pages > ```home.html```
+4. Once you're on the ```homel.html``` file, click the ```Go Live``` button on the bottom right hand corner
+5. You should be able to run the website locally on the browser
 
 
 ## Getting started
