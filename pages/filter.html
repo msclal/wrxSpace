@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Find a Desk Buddy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+        <link rel=" stylesheet" media=" all" href="../flexboxgrid.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <!-- Fontawesome CDN Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body>
+        
+        <!-- navbar -->
+        <header>
+            <a class="logo" href="home.html"><img src="../images/image.png" alt="logo"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="profile.html">Welcome, Alex</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="filter.html">Find Buddy</a>
+            <p class="menu cta">Menu</p>
+        </header>
+        
+        <!-- mobile -->
+        <div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="home.html">Home</a>
+                <a href="profile.html">Welcome, Alex</a>
+                <a href="filter.html">Find Buddy</a>
+            </div>
+        </div>
+
+        
+        <!-- Filter Role -->
+        <div class="filters-component" style="float: left"> 
+            <div id="filterHeader">
+                <h2 style="text-align: left; margin-left: 12px">Filter Profiles:</h2>
+            </div>
+            <!--Filter Location-->
+            <div class="container">
+                <div class="select-btn2">
+                    <span class="btn-text2">Select Location</span>
+                    <span class="arrow-dwn">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </div>
+    
+                <ul class="list-items">
+                    <li class="locationItem">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Milwaukee</span>
+                    </li>
+                    <li class="locationItem">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Franklin</span>
+                    </li>
+                    <li class="locationItem">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">New York</span>
+                    </li>
+                    <li class="locationItem">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Zoom</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="select-btn">
+                    <span class="btn-text">Select Role</span>
+                    <span class="arrow-dwn">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </div>
+    
+                <ul class="list-items">
+                    <li class="item">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Software Engineer</span>
+                    </li>
+                    <li class="item">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Business Analyst</span>
+                    </li>
+                    <li class="item">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Data Analyst</span>
+                    </li>
+                    <li class="item">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Cloud Architect</span>
+                    </li>
+                    <li class="item">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Cybersecurity Engineer</span>
+                    </li>
+                    <li class="item">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Tech Support</span>
+                    </li>
+                </ul>
+            </div>
+            <!--Filter Department-->
+            <div class="container">
+                <div class="select-btn1">
+                    <span class="btn-text1">Select Department</span>
+                    <span class="arrow-dwn">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </div>
+    
+                <ul class="list-items">
+                    <li class="departmentItem">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Core Data & Analytics</span>
+                    </li>
+                    <li class="departmentItem">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Enterprise Architecture</span>
+                    </li>
+                    <li class="departmentItem">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Enterprise Information Risk & Cybersecurity</span>
+                    </li>
+                    <li class="departmentItem">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Engineering Solutions Delivery</span>
+                    </li>
+                    <li class="departmentItem">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Infrastructure & Cloud Services</span>
+                    </li>
+                    <li class="departmentItem">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Technology Customer Success</span>
+                    </li>
+                    <li class="departmentItem">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">WIRX</span>
+                    </li>
+                    <li class="departmentItem">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Technology Community Outreach</span>
+                    </li>
+                    <li class="departmentItem">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">Innovation</span>
+                    </li>
+                </ul>
+            </div>
+    
+                    <!--Filter Skills-->
+                    <div class="container">
+                        <div class="select-btn3">
+                            <span class="btn-text3">Select Skills</span>
+                            <span class="arrow-dwn">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+            
+                        <ul class="list-items">
+                            <li class="skillsItem">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">Frontend Development</span>
+                            </li>
+                            <li class="skillsItem">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">Backend Development</span>
+                            </li>
+                            <li class="skillsItem">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">Database Management</span>
+                            </li>
+                            <li class="skillsItem">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">Network Architecture</span>
+                            </li>
+                            <li class="skillsItem">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">UI/UX Design</span>
+                            </li>
+                            <li class="skillsItem">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">Technical Writing</span>
+                            </li>
+                            <li class="skillsItem">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">Sourcecode Management</span>
+                            </li>
+                            <li class="skillsItem">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">Agile Methodologies</span>
+                            </li>
+                        </ul>
+                    </div> </br>
+                <a class="cta" id="generateMatches" href="people.html" style="width: 60%; margin-left: 15%; background-color: darkgray;">Generate Matches</a>
+            </div>
+            <div class="profiles" style="display: inline-block; width: 70%">
+                <div id="profile-box">
+                    <div class="row">
+                        <h1 style="padding: 1%; margin-left: 10px;">All <i style="color: #0088a9;">wrxSpace</i> Profiles</h1>
+                    </div>
+                </div>
+                <div id="profile-box">
+                    <div class="row">
+                        <div style="display: inline-block; padding: 2%; width: 15%">
+                            <img src="../images/profile-images/HayleyJamiola.png" style="height:175px; border-radius: 5px; margin-bottom: 3%">
+                            <a class="cta" id="generateMatches" href="people.html" style="width: 60%; margin-left: 18%; background-color: darkgray;">Connect</a>
+                        </div>
+                        <div style="display: inline-block; margin-left: 3%; margin-top: 2%">
+                            <h2>Hayley Jamiola</h2>
+                            <p><b>Role: </b>Software Engineering Intern</p>
+                            <p><b>Department: </b>Engineering Solution Delivery</p>
+                            <p><b>Location: </b>Franklin</p>
+                            <p><b>Status: </b>Working From Home</p>
+                            <p><b>Skills: </b>Sourcecode Management, Frontend Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="profile-box">
+                    <div class="row">
+                        <div style="display: inline-block; padding: 2%; width: 15%">
+                            <img src="../images/profile-images/Will.png" style="height:175px; border-radius: 5px; margin-bottom: 3%">
+                            <a class="cta" id="generateMatches" href="people.html" style="width: 60%; margin-left: 18%; background-color: #0088a9;">Connect</a>
+                        </div>
+                        <div style="display: inline-block; margin-left: 3%; margin-top: 2%">
+                            <h2>Will Grabowski</h2>
+                            <p><b>Role: </b>Data Engineering Intern</p>
+                            <p><b>Department: </b>Core Data & Analytics</p>
+                            <p><b>Location: </b>Milwaukee</p>
+                            <p><b>Status: </b>In the Office</p>
+                            <p><b>Skills: </b>Agile Methodologies, Database Management</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="profile-box">
+                    <div class="row">
+                        <div style="display: inline-block; padding: 2%; width: 15%">
+                            <img src="../images/profile-images/Nicholas.png" style="height:175px; border-radius: 5px; margin-bottom: 3%">
+                            <a class="cta" id="generateMatches" href="people.html" style="width: 60%; margin-left: 18%; background-color: #0088a9;">Connect</a>
+                        </div>
+                        <div style="display: inline-block; margin-left: 3%; margin-top: 2%">
+                            <h2>Nicholas Nettles</h2>
+                            <p><b>Role: </b>Technology Support Intern</p>
+                            <p><b>Department: </b>Technology Customer Success</p>
+                            <p><b>Location: </b>Franklin</p>
+                            <p><b>Status: </b>In the Office</p>
+                            <p><b>Skills: </b>Technical Writing, Network Architecture, Agile Methodologies</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="profile-box">
+                    <div class="row">
+                        <div style="display: inline-block; padding: 2%; width: 15%">
+                            <img src="../images/profile-images/John.png" style="height:175px; border-radius: 5px; margin-bottom: 3%">
+                            <a class="cta" id="generateMatches" href="people.html" style="width: 60%; margin-left: 18%; background-color: #0088a9;">Connect</a>
+                        </div>
+                        <div style="display: inline-block; margin-left: 3%; margin-top: 2%">
+                            <h2>John Peters</h2>
+                            <p><b>Role: </b>Senior Software Engineer</p>
+                            <p><b>Department: </b>Engineering Solutions Delivery</p>
+                            <p><b>Location: </b>Milwaukee</p>
+                            <p><b>Status: </b>In the Office</p>
+                            <p><b>Skills: </b>Frontend Development, Backend Development, Agile Methodologies, Database Management</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="profile-box">
+                    <div class="row">
+                        <div style="display: inline-block; padding: 2%; width: 15%">
+                            <img src="../images/profile-images/Calvin.png" style="height:175px; border-radius: 5px; margin-bottom: 3%">
+                            <a class="cta" id="generateMatches" href="people.html" style="width: 60%; margin-left: 18%; background-color: darkgray;">Connect</a>
+                        </div>
+                        <div style="display: inline-block; margin-left: 3%; margin-top: 2%">
+                            <h2>Calvin Musoke</h2>
+                            <p><b>Role: </b>Data Integration Engineering Intern</p>
+                            <p><b>Department: </b>Engineering Solutions Delivery</p>
+                            <p><b>Location: </b>Milwaukee</p>
+                            <p><b>Status: </b>Working From Home</p>
+                            <p><b>Skills: </b>Agile Methodologies, Database Management</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="profile-box">
+                    <div class="row">
+                        <div style="display: inline-block; padding: 2%; width: 15%">
+                            <img src="../images/profile-images/Mika.png" style="height:175px; border-radius: 5px; margin-bottom: 3%">
+                            <a class="cta" id="generateMatches" href="people.html" style="width: 60%; margin-left: 18%; background-color: #0088a9;">Connect</a>
+                        </div>
+                        <div style="display: inline-block; margin-left: 3%; margin-top: 2%">
+                            <h2>Mika Carodan</h2>
+                            <p><b>Role: </b>Software Engineering Intern</p>
+                            <p><b>Department: </b>WIRX</p>
+                            <p><b>Location: </b>Milwaukee</p>
+                            <p><b>Status: </b>In the Office</p>
+                            <p><b>Skills: </b>Frontend Development, Technical Writing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <script type="text/javascript" src="../script.js"></script>
+    </body>
+    <footer>
+        <p class="copyright">wrxSpace © 2022. All Rights Reserved.</p>
+    </footer>
+</html>

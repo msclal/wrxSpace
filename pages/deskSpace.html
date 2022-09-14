@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Find a wrxSpace</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+        <link rel="stylesheet" href="../styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <!-- Fontawesome CDN Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body>
+        
+        <!-- navbar -->
+        <header>
+            <a class="logo" href="home.html"><img src="../images/image.png" alt="logo"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="profile.html">Welcome, Alex</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="filter.html">Find Buddy</a>
+            <p class="menu cta">Menu</p>
+        </header>
+        
+        <!-- mobile -->
+        <div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="home.html">Home</a>
+                <a href="profile.html">Welcome, Alex</a>
+                <a href="filter.html">Find Buddy</a>
+            </div>
+        </div>
+
+        <div>
+            <div id="box">
+                <h1 style="text-align: center;">Find a <i style="color: #0088a9">wrxSpace</i></h1>
+            </div>
+            <div class="content">
+                <div id="box">
+                <div class="row">
+                    <div >
+                        <form>
+                            <label for="location" style="margin-right: 5px">Choose a Location:</label>
+                            <select id="location" name="location" onChange="update()">
+                              <option value="">Select Option</option>
+                              <option value="mke">Milwaukee</option>
+                              <option value="frank">Franklin</option>
+                              <option value="ny">New York</option>
+                              <option value="ny">Zoom</option>
+                            </select>
+                          </form>
+                          </div>
+                </div>
+            </div>
+            <div class="content" id="milwaukeeBuildingForm" style="display: none">
+                <div id="box">
+                <div class="row">
+                    <div>
+                        <form>
+                          <label for="milwaukeeBuildings" style="margin-right: 5px">Choose a Building:</label>
+                          <select id="milwaukeeBuildings" name="milwaukeeBuildings" onChange="update2()">
+                              <option value="">Select Option</option>
+                            <option value="northBuilding">North Building</option>
+                            <option value="tower">Tower</option>
+                            <option value="commons">Commons</option>
+                            <option value="vanBuren">Van Buren</option>
+                          </select>
+                        </form>
+                        </div>
+                </div>
+            </div>
+            <div class="content" id="mkeFloorsForm" style="display: none">
+                <div id="box">
+                <div class="row">
+                    <div>
+                        <form>
+                          <label for="mkeFloors" style="margin-right: 5px">Choose a Floor:</label>
+                          <select id="mkeFloors" name="mkeFloors" onChange="update3()">
+                              <option value="">Select Option</option>
+                            <option value="T6">6</option>
+                            <option value="T7">7</option>
+                            <option value="T8">8</option>
+                            <option value="T9">9</option>
+                            <option value="T10">10</option>
+                            <option value="T11">11</option>
+                            <option value="T12">12</option>
+                            <option value="T13">13</option>
+                            <option value="T14">14</option>
+                            <option value="T15">15</option>
+                            <option value="T16">16</option>
+                            <option value="T17">17</option>
+                            <option value="T18">18</option>
+                            <option value="T19">19</option>
+                            <option value="T20">20</option>
+                            <option value="T21">21</option>
+                            <option value="T22">22</option>
+                            <option value="T23">23</option>
+                            <option value="T24">24</option>
+                            <option value="T25">25</option>
+                            <option value="T26">26</option>
+                            <option value="T27">27</option>
+                            <option value="T28">28</option>
+                            <option value="T29">29</option>
+                            <option value="T30">30</option>
+                            <option value="T31">31</option>
+                          </select>
+                        </form>
+                        </div>
+            </div>
+            </div>
+            <div class="content" id="lastDeskSpaceFormElement" style="display: none">
+                <div id="box">
+                <div class="row">
+                    <div>
+                        <p>Please detail any specific equipment preferences you have for your wrxSpace: </p></br>
+                  <textarea placeholder="Example: I would like to have 2 monitors at the wrxSpace." cols="80"></textarea>
+                    </br>
+                    </br>
+                  
+                        </div>
+                </div>
+            </div>
+            <a class="cta" id="submitRequest" href="thankYou.html" style="display: none">Submit wrxSpace Request</a>
+        </div>
+
+        <script type="text/javascript" src="../deskSpaceScript.js"></script>
+    </body>
+</html>
